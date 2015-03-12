@@ -1,0 +1,138 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    color: #0000ff;
+    font: 14px/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+img {
+    border: none!important;
+}
+
+.border1px {
+    border: 1px solid #000;
+    opacity: 0.5;
+}
+
+#stage,
+#page0,
+#page1,
+#page2,
+#page3,
+#page4 {
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    margin-left: -450px;
+    margin-top: -300px;
+    box-shadow: 0 0 6px #666;
+}
+#page1.status0,
+#page2.status0,
+#page3.status0,
+#page4.status0 {
+    opacity: 0;
+}
+#page1.status2,
+#page2.status2,
+#page3.status2,
+#page4.status2 {
+    opacity: 0;
+}
+
+#page1.status1,
+#page2.status1,
+#page3.status1,
+#page4.status1 {
+    opacity: 1;
+}
+#page0.status0 {
+    opacity: 0;
+}
+#page0.status1 {
+    opacity: 1;
+}
+/*-----------------bg-------------------*/
+#bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#bg li {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bg0 {
+    background: #aaa;
+
+}
+#bg1 {
+    background: #bbb;
+}
+#bg2 {
+    background: #ccc;
+}
+#bg3 {
+    background: #ddd;
+}
+#bg4 {
+    background: #eee;
+}
+
+/*---------------------------------------------------------------------------------*/
+#navigation {
+    position: absolute;
+    top: 50%;
+    margin-top: -80px;
+    right: 20px;
+    text-align: center;
+    -webkit-transition: opacity 0.6s 0s;
+    /*border: 1px solid #f00;*/
+
+}
+#navigation > li {
+    width: 8px;
+    height: 8px;
+    margin: 1px 1px 24px 1px;
+    background: #000;
+    -webkit-border-radius: 6px;
+    -webkit-transition: All 0.3s 0s;
+    opacity: 0.2;
+}
+#navigation > li.page_on {
+    opacity: 1;
+}
+
+/*---------------------------------------------------------------------------------*/
+.global_logo {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+#global_scroll {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 20px;
+}

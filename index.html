@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>scroll-page-framework</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <!-- custom motion css -->
+    <link rel="stylesheet" href="assets/css/motion.css"/>
+</head>
+<body>
+
+<!-- background -->
+<ul id="bg">
+    <li id="bg1"></li>
+    <li id="bg2"></li>
+    <li id="bg3"></li>
+    <li id="bg4"></li>
+    <li id="bg0"></li>
+</ul>
+
+<!-- stage for exhibition -->
+<div id="stage">
+
+    <div id="page1" class="status2">
+        <h1>TWO</h1>
+    </div>
+
+    <div id="page2" class="status2">
+        <h1>THREE</h1>
+    </div>
+    <div id="page3" class="status2">
+        <h1>FOUR</h1>
+    </div>
+    <div id="page4" class="status2">
+        <h1>FIVE</h1>
+    </div>
+    <div id="page0" class="status2">
+        <h1>ONE</h1>
+    </div>
+</div>
+
+<!-- navigation -->
+<ul id="navigation">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!-- global logo -->
+<div class="global_logo">
+    <p class="border1px"><small>Global logo goes here ! </small></p>
+    <!-- you can use <img> tag to replace the text above -->
+</div>
+
+<!-- scroll tips -->
+<div id="global_scroll">
+    <p class="border1px"><small> scroll's tip goes here ! </small></p>
+    <!-- you can use <img> tag to replace the text above -->
+</div>
+
+
+<script src="assets/lib/jquery/dist/jquery.min.js"></script>
+<script src="assets/lib/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="assets/js/common.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        MotionEventRegister();
+        motion(0);
+    });
+</script>
+</body>
+</html>
